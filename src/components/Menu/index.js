@@ -8,7 +8,7 @@ import * as S from './styles';
 const Menu = () => {
     return (
         <S.Container>
-            <img className="logo" src={logo} />
+            <img className="logo" src={logo} alt="Studio Amorim - Cílios e Sobrancelhas" />
             {/* <nav>
                 <ul>
                     <li><a href="https://julianaamorim.com">Serviços</a></li>
