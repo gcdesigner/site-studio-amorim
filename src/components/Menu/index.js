@@ -11,16 +11,16 @@ const Menu = () => {
             <img className="logo" src={logo} />
             {/* <nav>
                 <ul>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Quem somos</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Depoimentos</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="https://julianaamorim.com">Serviços</a></li>
+                    <li><a href="https://julianaamorim.com">Quem somos</a></li>
+                    <li><a href="https://julianaamorim.com">Portfolio</a></li>
+                    <li><a href="https://julianaamorim.com">Depoimentos</a></li>
+                    <li><a href="https://julianaamorim.com">Contato</a></li>
                 </ul>
             </nav> */}
             <div className="redes-sociais">
-                <a href="#"><FaFacebook color="#324AC6" /></a>
-                <a href="#"><FaInstagram color="#BA1C97" /></a>
+                <a href="https://julianaamorim.com"><FaFacebook color="#324AC6" /></a>
+                <a href="https://julianaamorim.com"><FaInstagram color="#BA1C97" /></a>
             </div>
             <button type="button">
                 Agende seu horário

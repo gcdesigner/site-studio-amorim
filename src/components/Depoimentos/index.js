@@ -21,7 +21,7 @@ const Depoimentos = () => {
 							<FaChevronLeft />
 						</button>
 
-                    	<img src={img} alt="" />
+                    	<img src={img} alt="Texto alternativo" />
 
 						<button type="button">
 							<FaChevronRight />

@@ -25,7 +25,7 @@ const Servicos = () => {
                         <li>Lash lifting</li>
                         <li>Híbrido</li>
                     </ul>
-                    <a href="#">Saiba mais +</a>
+                    <a href="https://julianaamorim.com">Saiba mais +</a>
                 </div>
                 <img src={imgCilios} alt="Alongamento de Cílios" />
             </S.Servico>
@@ -41,7 +41,7 @@ const Servicos = () => {
                         <li>Design em Henna</li>
                         <li>Micropigmentação</li>
                     </ul>
-                    <a href="#">Saiba mais +</a>
+                    <a href="https://julianaamorim.com">Saiba mais +</a>
                 </div>
             </S.Servico>
         </S.Container>

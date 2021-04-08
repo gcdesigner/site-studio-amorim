@@ -30,10 +30,10 @@ const Contato = () => {
                     </p>
 
                     <div className="social">
-                        <a href="#">
+                        <a href="https://julianaamorim.com">
                             <FaInstagram color="#BA1C97" size={30} />
                         </a>
-                        <a href="#">
+                        <a href="https://julianaamorim.com">
                             <FaFacebook color="#324AC6" size={30} />
                         </a>
                     </div>

@@ -17,15 +17,15 @@ const Galeria = () => {
             />
 
             <div className="galeria">
-                <img src={img1} alt="" />
-                <img src={img2} alt="" />
-                <img src={img3} alt="" />
-                <img src={img1} alt="" />
+                <img src={img1} alt="Texto alternativo" />
+                <img src={img2} alt="Texto alternativo" />
+                <img src={img3} alt="Texto alternativo" />
+                <img src={img1} alt="Texto alternativo" />
 
-                <img src={img1} alt="" />
-                <img src={img2} alt="" />
-                <img src={img3} alt="" />
-                <img src={img1} alt="" />                
+                <img src={img1} alt="Texto alternativo" />
+                <img src={img2} alt="Texto alternativo" />
+                <img src={img3} alt="Texto alternativo" />
+                <img src={img1} alt="Texto alternativo" />                
             </div>
         </S.Container>
     )

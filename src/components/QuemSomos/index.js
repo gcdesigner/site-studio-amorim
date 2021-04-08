@@ -30,10 +30,10 @@ const QuemSomos = () => {
                     <br />
 
                     <div className="social">
-                        <a href="#">
+                        <a href="https://julianaamorim.com">
                             <FaInstagram size={30} color="#BA1C97"/>
                         </a>
-                        <a href="#">
+                        <a href="https://julianaamorim.com">
                             <FaFacebook size={30} color="#324AC6"/>
                         </a>
                         Nos acompanhe nas redes sociais
@@ -44,7 +44,7 @@ const QuemSomos = () => {
                 </div>
 
                 <div className="galeria">
-                    <img src={quemSomosimg1} alt="" />
+                    <img src={quemSomosimg1} alt="Texto alternativo" />
                 </div>
             </div>
         </S.Container>
