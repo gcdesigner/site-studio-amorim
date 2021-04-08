@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
     * {
@@ -12,6 +12,10 @@ export default createGlobalStyle`
     body {
         -webkit-font-smoothing: antialiased;
         color: #666;
+
+        &.menu-opened {
+            overflow: hidden;
+        }
     }
 
     body, input, button {
@@ -22,10 +26,14 @@ export default createGlobalStyle`
         line-height: 2;
     }
 
-    /* #root {
-        max-width: 1280px;
-        margin: 0 auto;
-    } */
+    #root {
+       overflow: hidden;
+       padding-top: 110px;
+
+       @media (max-width: 768px) {
+        padding-top: 0;
+        }
+    }
 
     button {
         cursor: pointer;
@@ -37,6 +45,8 @@ export default createGlobalStyle`
             opacity: .8;
         }
     }
+
+    a { cursor: pointer; }
     
     .text-center {
         text-align: center;
@@ -48,7 +58,7 @@ export default createGlobalStyle`
 
     input {
         width: 100%;
-        height: 58px;
+        height: 50px;
         background: #FCFCFC;
         border: 1px solid #E3E3E3;
         box-sizing: border-box;
@@ -59,4 +69,4 @@ export default createGlobalStyle`
             margin-top: 1rem;
         }
     }
-`;
+`

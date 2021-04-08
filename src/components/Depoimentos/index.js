@@ -8,7 +8,7 @@ import * as S from './styles'
 
 const Depoimentos = () => {
     return (
-        <S.Container>
+        <S.Container id="depoimentos">
             <SectionTitle
                 title={`Depoimentos`}
                 desc={`Veja o que nossas clientes estão comentando sobre nosso trabalho.\nÉ sempre um prazer atendê-las!`}
@@ -16,17 +16,17 @@ const Depoimentos = () => {
 
             <S.Depoimentos>
                 <div className="content">
-					<div className="navigation">
-						<button type="button">
-							<FaChevronLeft />
-						</button>
+                    <div className="navigation">
+                        <button type="button">
+                            <FaChevronLeft />
+                        </button>
 
-                    	<img src={img} alt="Texto alternativo" />
+                        <img src={img} alt="Texto alternativo" />
 
-						<button type="button">
-							<FaChevronRight />
-						</button>
-					</div>
+                        <button type="button">
+                            <FaChevronRight />
+                        </button>
+                    </div>
                     <p>
                         “Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum has been the
@@ -35,7 +35,7 @@ const Depoimentos = () => {
                         scrambled it to make a type specimen book. It has
                         survived not only five centuries, but also”
                     </p>
-					<strong>Rakel Santos</strong>
+                    <strong>Rakel Santos</strong>
                 </div>
             </S.Depoimentos>
         </S.Container>

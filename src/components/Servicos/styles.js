@@ -1,53 +1,71 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Container = styled.section`
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 3rem 1rem;
-`;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+`
 
 export const Servico = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 1rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
 
-  .box-texto {
-    width: 350px;
-    background-color: #1F1D1D;
-    padding: 1rem 1.5rem;
-    color: #fff;
+    .box-texto {
+        width: 350px;
+        background-color: #1f1d1d;
+        padding: 1rem 1.5rem;
+        color: #fff;
 
-    h4 {
-      margin-bottom: 1rem;
-      font-size: 1.5rem;
-      font-weight: 600;
+        @media (max-width: 768px) {
+            width: 100%;
+            margin: 0 !important;
+            text-align: center;
+        }
+
+        h4 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        p {
+            font-weight: 300;
+            margin-bottom: 0.5rem;
+        }
+
+        ul {
+            margin-bottom: 1rem;
+            li {
+                color: #df8484;
+                font-size: 1.2rem;
+            }
+        }
+
+        a {
+            display: inline-block;
+            color: #fff;
+            margin: 0 0 0 auto;
+        }
     }
 
-    p {
-      font-weight: 300;
-      margin-bottom: 0.5rem;
+    .img-servico {
+        width: calc(100% - 370px);
+        height: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            opacity: 0.1;
+        }
     }
-
-    ul {
-      margin-bottom: 1rem;
-      li {
-        color: #DF8484;
-        font-size: 1.2rem;
-      }
-    }
-
-
-    a {
-      display: inline-block;
-      color: #fff;
-      margin: 0 0 0 auto;
-    }
-  }
-
-  img {
-    height: 100%;
-    max-width: 100%;
-  }
-`;
-
+`

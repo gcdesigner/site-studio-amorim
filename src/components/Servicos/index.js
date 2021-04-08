@@ -1,21 +1,21 @@
-import React from 'react';
+import React from 'react'
 
-import SectionTitle from '../../components/SectionTitle';
-import imgCilios from '../../assets/alongamento-cilios-home.jpg';
-import imgSobrancelhas from '../../assets/design-sobrancelhas-home.jpg';
+import SectionTitle from '../../components/SectionTitle'
+import imgCilios from '../../assets/alongamento-cilios-home.jpg'
+import imgSobrancelhas from '../../assets/design-sobrancelhas-home.jpg'
 
-import * as S from './styles';
+import * as S from './styles'
 
 const Servicos = () => {
     return (
-        <S.Container>
-            <SectionTitle 
-                title="Nossos serviços" 
+        <S.Container id="servicos">
+            <SectionTitle
+                title="Nossos serviços"
                 desc="Saber escolher o procedimento é um passo muito importante antes de realçar a sua beleza!"
             />
 
             <S.Servico>
-                <div className="box-texto"  style={{ marginRight: '1rem' }}>
+                <div className="box-texto" style={{ marginRight: '1rem' }}>
                     <h4>Alongamento de cílios</h4>
                     <p>Técnicas aplicadas</p>
                     <ul>
@@ -27,11 +27,17 @@ const Servicos = () => {
                     </ul>
                     <a href="https://julianaamorim.com">Saiba mais +</a>
                 </div>
-                <img src={imgCilios} alt="Alongamento de Cílios" />
+                <div
+                    className="img-servico"
+                    style={{ backgroundImage: `url(${imgCilios})` }}
+                ></div>
             </S.Servico>
 
             <S.Servico>
-                <img src={imgSobrancelhas} alt="Alongamento de Cílios" />
+                <div
+                    className="img-servico"
+                    style={{ backgroundImage: `url(${imgSobrancelhas})` }}
+                ></div>
                 <div className="box-texto" style={{ marginLeft: '1rem' }}>
                     <h4>Design de sobrancelhas</h4>
                     <p>Técnicas aplicadas</p>
@@ -48,4 +54,4 @@ const Servicos = () => {
     )
 }
 
-export default Servicos;
+export default Servicos

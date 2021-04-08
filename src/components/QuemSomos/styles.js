@@ -2,17 +2,19 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   background-color: #F5F2F2;
+  padding: 3rem 1rem;
+
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
 
     .content {
         position: relative;
         max-width: 1280px;
         margin: 0 auto;
-        display: flex;
 
         .box-texto {
-            flex: 1;
-            width: 40%;
-            padding: 3rem 1rem;
+            max-width: 650px;
 
             p {
                 margin-bottom: 1rem;        
@@ -29,8 +31,11 @@ export const Container = styled.div`
         }
 
         .galeria {
-            flex: 1;
+            position: absolute;
             width: 60%;
+            height: 100%;
+            top: -3rem;
+            right: -1rem;
 
             img { 
                 height: 100%;
