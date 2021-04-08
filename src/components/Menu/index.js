@@ -1,7 +1,7 @@
-import React, { useEffect, useLayoutEffect, useState } from 'react'
+import React, { useLayoutEffect, useState } from 'react'
 import logo from '../../assets/logo-studio-amorim.svg'
 import { FaFacebook, FaInstagram, FaBars } from 'react-icons/fa'
-import { Link, animateScroll as scroll } from 'react-scroll'
+import { Link } from 'react-scroll'
 
 import * as S from './styles'
 

@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 
 import SectionTitle from '../../components/SectionTitle'
 import { FaFacebook, FaInstagram } from 'react-icons/fa'
 import quemSomosimg1 from '../../assets/quem-somos-1.png'
-import quemSomosimg2 from '../../assets/quem-somos-2.png'
-import quemSomosimg3 from '../../assets/quem-somos-3.png'
+// import quemSomosimg2 from '../../assets/quem-somos-2.png'
+// import quemSomosimg3 from '../../assets/quem-somos-3.png'
 
 import * as S from './styles'
 

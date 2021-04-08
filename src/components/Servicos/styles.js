@@ -13,6 +13,10 @@ export const Servico = styled.div`
     flex-wrap: wrap;
     margin-bottom: 1rem;
 
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+
     .box-texto {
         width: 350px;
         background-color: #1f1d1d;
@@ -20,9 +24,13 @@ export const Servico = styled.div`
         color: #fff;
 
         @media (max-width: 768px) {
-            width: 100%;
+            position: relative;
+            width: 50%;
+            min-width: 200px;
             margin: 0 !important;
             text-align: center;
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.85);
         }
 
         h4 {
@@ -64,8 +72,7 @@ export const Servico = styled.div`
             position: absolute;
             top: 0;
             left: 0;
-            z-index: 1;
-            opacity: 0.1;
+            z-index: 0;
         }
     }
 `
