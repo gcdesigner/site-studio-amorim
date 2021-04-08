@@ -4,7 +4,7 @@ import SectionTitle from '../../components/SectionTitle'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import depoimentos from './depoimentos'
 
-import { Slide, goNext } from 'react-slideshow-image'
+import { Slide } from 'react-slideshow-image'
 
 import * as S from './styles'
 

@@ -13,7 +13,7 @@ const Galeria = () => {
         <S.Container id="portfolio">
             <SectionTitle
                 title={`Olhar de quem\njá passou por aqui!`}
-                desc={`Veja a transformação de algumas de nossas clientes e conheça\numa “pontinha” do nosso trabalho`}
+                desc={`Veja a transformação de algumas de nossas clientes e conheça uma “pontinha” do nosso trabalho`}
             />
 
             <div className="galeria">
