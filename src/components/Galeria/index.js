@@ -1,9 +1,5 @@
 import React from 'react'
 
-import img1 from '../../assets/galeria/cliente1.png'
-import img2 from '../../assets/galeria/cliente2.png'
-import img3 from '../../assets/galeria/cliente3.png'
-
 import SectionTitle from '../../components/SectionTitle'
 
 import * as S from './styles'
