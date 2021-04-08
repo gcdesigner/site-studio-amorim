@@ -59,7 +59,11 @@ const QuemSomos = () => {
                     <br />
 
                     <div className="social">
-                        <a href="https://julianaamorim.com">
+                        <a
+                            href={process.env.REACT_APP_INSTAGRAM_URL}
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             <FaInstagram size={30} color="#BA1C97" />
                         </a>
                         <a href="https://julianaamorim.com">
@@ -71,8 +75,12 @@ const QuemSomos = () => {
 
                 <Fade className="galeria" arrows={false} infinite={true}>
                     {images.map((item, index) => (
-                        <div className="each-fade" key={index}>
-                            <img src={item} alt="texto alternativo" />
+                        <div
+                            className="each-fade"
+                            key={index}
+                            style={{ backgroundImage: `url(${item})` }}
+                        >
+                            {/* <img src={item} alt="texto alternativo" /> */}
                         </div>
                     ))}
                 </Fade>

@@ -1,12 +1,27 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     background-color: #f5f2f2;
-    padding: 3rem 1rem 5rem;
+    padding: 3rem 1rem;
+    overflow: hidden;
+
+    .design {
+        position: absolute;
+        width: 100%;
+        z-index: 0;
+        opacity: 0.3;
+    }
 
     .content {
+        position: relative;
         max-width: 800px;
         margin: 0 auto;
+        z-index: 1;
 
         display: flex;
         justify-content: center;
@@ -23,13 +38,23 @@ export const Container = styled.div`
             }
 
             .btn-whatsapp {
-                height: 50px;
+                height: 70px;
+                max-width: 350px;
                 display: flex;
                 align-items: center;
+                justify-content: center;
+                font-size: 1.2rem;
                 background-color: #18c768;
                 color: #fff;
                 border-radius: 50px;
-                margin-bottom: 2rem;
+                margin: 0 auto 2rem;
+                text-decoration: none;
+                padding: 0.5rem 1.5rem;
+                transition: all 0.5s;
+
+                &:hover {
+                    box-shadow: 0 0 10px #18c768;
+                }
             }
 
             .social {

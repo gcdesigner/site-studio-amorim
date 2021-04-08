@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Container = styled.header`
     position: relative;
@@ -11,7 +11,7 @@ export const Container = styled.header`
         font-family: 'Cinzel';
         font-weight: 400;
         font-size: 40px;
-        color: #543C3C;
+        color: #543c3c;
         padding-bottom: 1.2rem;
         white-space: break-spaces;
         text-align: center;
@@ -21,15 +21,17 @@ export const Container = styled.header`
         display: block;
         height: 2px;
         width: 150px;
-        background-color: #CDAEAA;
+        background-color: #cdaeaa;
         margin: 0 auto;
         margin-bottom: 1rem;
     }
 
     p {
+        max-width: 650px;
+        margin: 0 auto;
         color: #666;
         font-size: 1.1rem;
         text-align: center;
         white-space: break-spaces;
     }
-`;
+`

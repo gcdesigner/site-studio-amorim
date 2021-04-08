@@ -96,10 +96,18 @@ const Menu = () => {
                 </nav>
 
                 <div className="redes-sociais">
-                    <a href="https://julianaamorim.com">
+                    <a
+                        href={process.env.REACT_APP_INSTAGRAM_URL}
+                        target="_blank"
+                        rel="noreferrer"
+                    >
                         <FaInstagram color="#BA1C97" size={25} />
                     </a>
-                    <a href="https://julianaamorim.com">
+                    <a
+                        href={process.env.REACT_APP_FACEBOOK_URL}
+                        target="_blank"
+                        rel="noreferrer"
+                    >
                         <FaFacebook color="#324AC6" size={25} />
                     </a>
                 </div>

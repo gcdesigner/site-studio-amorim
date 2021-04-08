@@ -22,7 +22,7 @@ const Depoimentos = () => {
         <S.Container id="depoimentos">
             <SectionTitle
                 title={`Depoimentos`}
-                desc={`Veja o que nossas clientes estão comentando sobre nosso trabalho.\nÉ sempre um prazer atendê-las!`}
+                desc={`Veja o que nossas clientes estão comentando sobre nosso trabalho. É sempre um prazer atendê-las!`}
             />
 
             <S.Depoimentos>

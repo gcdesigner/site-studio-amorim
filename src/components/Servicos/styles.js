@@ -25,12 +25,12 @@ export const Servico = styled.div`
 
         @media (max-width: 768px) {
             position: relative;
-            width: 50%;
+            width: 80%;
             min-width: 200px;
             margin: 0 !important;
             text-align: center;
             z-index: 1;
-            background-color: rgba(0, 0, 0, 0.85);
+            background-color: rgba(0, 0, 0, 0.8);
         }
 
         h4 {

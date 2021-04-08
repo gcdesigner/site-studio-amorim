@@ -17,6 +17,7 @@ export const Container = styled.section`
             flex-wrap: nowrap;
             overflow-x: auto;
             justify-content: flex-start;
+            margin: 0 -1.5rem;
         }
 
         img {
@@ -26,7 +27,7 @@ export const Container = styled.section`
             padding: 0.5rem;
 
             @media (max-width: 531px) {
-                min-width: 100%;
+                min-width: 85%;
             }
         }
     }

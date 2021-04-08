@@ -10,7 +10,7 @@ export default createGlobalStyle`
     }
 
     body {
-        -webkit-font-smoothing: antialiased;
+        -webkit-font-smoothing: subpixel-antialiased;
         color: #666;
 
         &.menu-opened {
@@ -43,6 +43,7 @@ export default createGlobalStyle`
 
         &:hover {
             opacity: .8;
+            transform: scale(1.1)
         }
     }
 

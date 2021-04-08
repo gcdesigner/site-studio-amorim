@@ -12,6 +12,7 @@ import Footer from '../../components/Footer'
 import BannerHome from '../../assets/banner-home-sem-texto.png'
 
 import * as S from './styles'
+import WhatsappBallon from '../../components/WhatsappBallon'
 
 const HomePage = () => {
     return (
@@ -32,6 +33,7 @@ const HomePage = () => {
             <Depoimentos />
             <Contato />
             <Footer />
+            <WhatsappBallon />
         </S.Container>
     )
 }

@@ -8,7 +8,7 @@ export const Container = styled.section`
     background-size: contain;
     background-repeat: no-repeat;
 
-    &::before {
+    /* &::before {
         content: '';
         position: absolute;
         width: 100%;
@@ -16,7 +16,7 @@ export const Container = styled.section`
         top: 0;
         left: 0;
         background-color: rgba(255, 255, 255, 0.5);
-    }
+    } */
 
     .content {
         position: relative;
@@ -55,12 +55,23 @@ export const Container = styled.section`
             right: -4.4rem;
             z-index: 1;
 
+            @media (max-width: 768px) {
+                position: relative;
+                width: 100%;
+                height: 300px;
+                right: 0;
+            }
+
             div {
                 width: 100%;
                 height: 100%;
                 background-repeat: no-repeat;
-                background-position: center;
+                background-position: left;
                 background-size: cover;
+
+                @media (max-width: 768px) {
+                    background-position: right;
+                }
             }
 
             img {
