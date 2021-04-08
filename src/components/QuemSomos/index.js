@@ -3,13 +3,15 @@ import React from 'react'
 import SectionTitle from '../../components/SectionTitle'
 import { FaFacebook, FaInstagram } from 'react-icons/fa'
 import quemSomosimg1 from '../../assets/quem-somos-1.png'
-// import quemSomosimg2 from '../../assets/quem-somos-2.png'
-// import quemSomosimg3 from '../../assets/quem-somos-3.png'
+import quemSomosimg2 from '../../assets/quem-somos-2.png'
+import quemSomosimg3 from '../../assets/quem-somos-3.png'
+
+import { Fade } from 'react-slideshow-image'
 
 import * as S from './styles'
 
 const QuemSomos = () => {
-    // const images = [quemSomosimg1, quemSomosimg2, quemSomosimg3];
+    const images = [quemSomosimg1, quemSomosimg2, quemSomosimg3]
     // const [galeria, setGaleria] = useState(0);
     // const [cont, setCont] = useState(0);
 
@@ -28,10 +30,7 @@ const QuemSomos = () => {
     // }, [cont, images.length])
 
     return (
-        <S.Container
-            id="quemsomos"
-            style={{ backgroundImage: `url(${quemSomosimg1})` }}
-        >
+        <S.Container id="quemsomos">
             <div className="content">
                 <div className="box-texto">
                     <SectionTitle title="Quem Somos" desc="" />
@@ -48,8 +47,7 @@ const QuemSomos = () => {
                     </p>
 
                     <div>
-                        <strong>Horário de atendimento:</strong> de 08h30 às
-                        19hs
+                        <strong>Horário de atendimento:</strong> de 09h às 18hs
                     </div>
                     <div>
                         <strong>Endereço:</strong> CLSW 302 Bloco B, setor
@@ -71,7 +69,13 @@ const QuemSomos = () => {
                     </div>
                 </div>
 
-                {/* <div className="galeria"></div> */}
+                <Fade className="galeria" arrows={false} infinite={true}>
+                    {images.map((item, index) => (
+                        <div className="each-fade" key={index}>
+                            <img src={item} alt="texto alternativo" />
+                        </div>
+                    ))}
+                </Fade>
             </div>
         </S.Container>
     )

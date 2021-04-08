@@ -1,12 +1,23 @@
-import React from 'react'
+import React, { useRef } from 'react'
 
 import SectionTitle from '../../components/SectionTitle'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
-import img from '../../assets/depoimento1.png'
+import depoimentos from './depoimentos'
+
+import { Slide, goNext } from 'react-slideshow-image'
 
 import * as S from './styles'
 
 const Depoimentos = () => {
+    const slideRef = useRef(null)
+
+    const slideProps = {
+        duration: 9000,
+        infinite: true,
+        pauseOnHover: true,
+        arrows: false,
+    }
+
     return (
         <S.Container id="depoimentos">
             <SectionTitle
@@ -17,25 +28,32 @@ const Depoimentos = () => {
             <S.Depoimentos>
                 <div className="content">
                     <div className="navigation">
-                        <button type="button">
-                            <FaChevronLeft />
+                        <button
+                            type="button"
+                            onClick={() => slideRef.current.goBack()}
+                        >
+                            <FaChevronLeft size={20} color="#666" />
                         </button>
-
-                        <img src={img} alt="Texto alternativo" />
-
-                        <button type="button">
-                            <FaChevronRight />
+                        <button
+                            type="button"
+                            onClick={() => slideRef.current.goNext()}
+                        >
+                            <FaChevronRight size={20} color="#666" />
                         </button>
                     </div>
-                    <p>
-                        “Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book. It has
-                        survived not only five centuries, but also”
-                    </p>
-                    <strong>Rakel Santos</strong>
+
+                    <Slide {...slideProps} ref={slideRef}>
+                        {depoimentos.map((item) => (
+                            <div key={item.nome} className="box-texto">
+                                <img
+                                    src={item.img}
+                                    alt={`Cliente ${item.nome}`}
+                                />
+                                <p>"{item.desc}"</p>
+                                <strong>{item.nome}</strong>
+                            </div>
+                        ))}
+                    </Slide>
                 </div>
             </S.Depoimentos>
         </S.Container>

@@ -4,11 +4,14 @@ export const Container = styled.div`
     position: relative;
     width: 100%;
     min-height: calc(100vh - 150px);
-    margin: 0 auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #968181;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 
     &::before {
         content: '';
@@ -22,6 +25,7 @@ export const Container = styled.div`
 
     .content {
         position: relative;
+        width: 100%;
         max-width: 1280px;
         padding: 3rem 1rem;
         margin: 0 auto;
@@ -52,6 +56,14 @@ export const Container = styled.div`
                 strong {
                     font-weight: 600;
                     font-size: 5rem;
+                }
+
+                @media (max-width: 768px) {
+                    font-size: 3rem;
+
+                    strong {
+                        font-size: 3.5rem;
+                    }
                 }
             }
 

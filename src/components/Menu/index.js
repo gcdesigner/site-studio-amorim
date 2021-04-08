@@ -41,10 +41,13 @@ const Menu = () => {
         return () => window.removeEventListener('scroll', updatePosition)
     }, [])
 
-    function handleToggleMenu() {
+    function handleToggleMenu(item) {
         setToggleMenu(!toggleMenu)
-
         document.body.classList.toggle('menu-opened')
+
+        if (item) {
+            document.body.classList.remove('menu-opened')
+        }
     }
 
     return (
@@ -83,7 +86,7 @@ const Menu = () => {
                                     smooth={true}
                                     offset={-75}
                                     duration={500}
-                                    onClick={() => handleToggleMenu()}
+                                    onClick={() => handleToggleMenu(true)}
                                 >
                                     {item.title}
                                 </Link>

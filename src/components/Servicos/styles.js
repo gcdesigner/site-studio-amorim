@@ -49,6 +49,10 @@ export const Servico = styled.div`
             li {
                 color: #df8484;
                 font-size: 1.2rem;
+
+                + li {
+                    margin-top: 3px;
+                }
             }
         }
 
