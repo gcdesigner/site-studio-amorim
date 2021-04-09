@@ -90,4 +90,9 @@ export default createGlobalStyle`
             margin-top: 1rem;
         }
     }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
 `
