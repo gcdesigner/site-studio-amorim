@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 
 import Menu from '../../components/Menu'
 import Banner from '../../components/Banner'
-import Servicos from '../../components/Servicos'
 import QuemSomos from '../../components/QuemSomos'
 import Galeria from '../../components/Galeria'
 import Depoimentos from '../../components/Depoimentos'
