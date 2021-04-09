@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 import Menu from '../../components/Menu'
 import Banner from '../../components/Banner'
@@ -15,10 +15,6 @@ import WhatsappBallon from '../../components/WhatsappBallon'
 import TecnicasSobrancelhas from '../../components/TecnicasSobrancelhas'
 
 const SobrancelhasPage = () => {
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    }, [])
-
     return (
         <S.Container>
             <Menu />

@@ -16,6 +16,15 @@ export default createGlobalStyle`
         &.menu-opened, &.modal-opened {
             overflow: hidden;
         }
+
+        &.loading {
+            overflow: hidden;
+            
+            .loading-page {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
     }
 
     body, input, button {

@@ -1,7 +1,8 @@
 import React, { useLayoutEffect, useState } from 'react'
 import logo from '../../assets/logo-studio-amorim.svg'
 import { FaFacebook, FaInstagram, FaBars } from 'react-icons/fa'
-import { Link } from 'react-scroll'
+import { Link as LinkScroll } from 'react-scroll'
+import { Link as Router } from 'react-router-dom'
 
 import * as S from './styles'
 
@@ -10,6 +11,16 @@ const Menu = () => {
         {
             title: 'Serviços',
             to: 'servicos',
+            sub: [
+                {
+                    title: 'Cílios',
+                    to: '/cilios',
+                },
+                {
+                    title: 'Sobrancelhas',
+                    to: '/sobrancelhas',
+                },
+            ],
         },
         {
             title: 'Sobre',
@@ -53,7 +64,7 @@ const Menu = () => {
     return (
         <S.Container className={scrollPosition > 100 ? 'scrolled' : 'normal'}>
             <div className="content">
-                <Link
+                <LinkScroll
                     className="logo"
                     to="home"
                     spy={true}
@@ -65,7 +76,7 @@ const Menu = () => {
                         src={logo}
                         alt="Studio Amorim - Cílios e Sobrancelhas"
                     />
-                </Link>
+                </LinkScroll>
 
                 <button
                     type="button"
@@ -77,9 +88,15 @@ const Menu = () => {
 
                 <nav className={toggleMenu ? 'opened' : 'closed'}>
                     <ul>
+                        <li>
+                            <Router to="/">Home</Router>
+                        </li>
                         {menuItems.map((item, index) => (
-                            <li key={item.title}>
-                                <Link
+                            <li
+                                key={item.title}
+                                className={item.sub ? 'hassub' : ''}
+                            >
+                                <LinkScroll
                                     to={item.to}
                                     activeClass="active"
                                     spy={true}
@@ -89,7 +106,16 @@ const Menu = () => {
                                     onClick={() => handleToggleMenu(true)}
                                 >
                                     {item.title}
-                                </Link>
+                                </LinkScroll>
+                                {item.sub && item.sub.length && (
+                                    <ul className="submenu">
+                                        {item.sub.map((sub) => (
+                                            <Router to={sub.to}>
+                                                {sub.title}
+                                            </Router>
+                                        ))}
+                                    </ul>
+                                )}
                             </li>
                         ))}
                     </ul>
