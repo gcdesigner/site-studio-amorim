@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { Link } from 'react-router-dom'
+
 import SectionTitle from '../../components/SectionTitle'
 import imgCilios from '../../assets/alongamento-cilios-home.jpg'
 import imgSobrancelhas from '../../assets/design-sobrancelhas-home.jpg'
@@ -25,7 +27,7 @@ const Servicos = () => {
                         <li>Lash lifting</li>
                         <li>Híbrido</li>
                     </ul>
-                    <a href="https://julianaamorim.com">Saiba mais +</a>
+                    <Link to="/cilios">Saiba mais +</Link>
                 </div>
                 <div
                     className="img-servico"
@@ -47,7 +49,7 @@ const Servicos = () => {
                         <li>Design em Henna</li>
                         <li>Micropigmentação</li>
                     </ul>
-                    <a href="https://julianaamorim.com">Saiba mais +</a>
+                    <Link to="/sobrancelhas">Saiba mais +</Link>
                 </div>
             </S.Servico>
         </S.Container>

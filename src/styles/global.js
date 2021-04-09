@@ -13,7 +13,7 @@ export default createGlobalStyle`
         -webkit-font-smoothing: subpixel-antialiased;
         color: #666;
 
-        &.menu-opened {
+        &.menu-opened, &.modal-opened {
             overflow: hidden;
         }
     }

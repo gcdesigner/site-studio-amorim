@@ -18,8 +18,8 @@ export const Servico = styled.div`
     }
 
     .box-texto {
-        width: 350px;
-        background-color: #1f1d1d;
+        width: 400px;
+        background-color: #3c312f;
         padding: 1rem 1.5rem;
         color: #fff;
 
@@ -64,7 +64,7 @@ export const Servico = styled.div`
     }
 
     .img-servico {
-        width: calc(100% - 370px);
+        width: calc(100% - 420px);
         height: auto;
         background-size: cover;
         background-repeat: no-repeat;

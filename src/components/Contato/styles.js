@@ -33,10 +33,6 @@ export const Container = styled.div`
         }
 
         .contato {
-            @media (max-width: 768px) {
-                margin-bottom: 2rem;
-            }
-
             .btn-whatsapp {
                 height: 70px;
                 max-width: 350px;
@@ -57,6 +53,11 @@ export const Container = styled.div`
                 }
             }
 
+            .telefone {
+                color: #bb4623;
+                text-decoration: none;
+            }
+
             .social {
                 a {
                     display: inline-block;
@@ -65,7 +66,7 @@ export const Container = styled.div`
             }
         }
 
-        .divider {
+        /* .divider {
             height: 250px;
             width: 1px;
             background: gainsboro;
@@ -74,9 +75,9 @@ export const Container = styled.div`
             @media (max-width: 768px) {
                 display: none;
             }
-        }
+        } */
 
-        .formulario {
+        /* .formulario {
             flex: 1;
             min-width: 250px;
             max-width: 350px;
@@ -89,6 +90,6 @@ export const Container = styled.div`
                 border-radius: 50px;
                 margin-top: 1rem;
             }
-        }
+        } */
     }
 `

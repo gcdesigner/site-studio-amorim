@@ -50,12 +50,16 @@ const QuemSomos = () => {
                         <strong>Horário de atendimento:</strong> de 09h às 18hs
                     </div>
                     <div>
-                        <strong>Endereço:</strong> CLSW 302 Bloco B, setor
-                        Sudoeste - Brasília-DF
+                        <strong>Endereço:</strong>{' '}
+                        {process.env.REACT_APP_ENDERECO}
                     </div>
                     <div>
-                        <strong>Telefone:</strong> +55 61 99414-4229
+                        <strong>Telefone:</strong>{' '}
+                        <a href="tel:+5561994144229">
+                            {process.env.REACT_APP_TELEFONE}
+                        </a>
                     </div>
+
                     <br />
 
                     <div className="social">

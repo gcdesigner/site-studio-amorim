@@ -37,6 +37,11 @@ export const Container = styled.section`
                 margin-top: 0.5rem;
             }
 
+            a {
+                color: #bb4623;
+                text-decoration: none;
+            }
+
             .social {
                 display: flex;
                 align-items: center;

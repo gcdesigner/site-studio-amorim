@@ -33,5 +33,6 @@ export const Container = styled.header`
         font-size: 1.1rem;
         text-align: center;
         white-space: break-spaces;
+        line-height: 1.5;
     }
 `

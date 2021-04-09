@@ -38,7 +38,9 @@ const Contato = () => {
                             color="#333"
                             style={{ marginRight: '.5rem' }}
                         />
-                        {process.env.REACT_APP_TELEFONE}
+                        <a className="telefone" href="tel:+5561994144229">
+                            {process.env.REACT_APP_TELEFONE}
+                        </a>
                     </p>
 
                     <p>

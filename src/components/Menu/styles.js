@@ -45,13 +45,13 @@ export const Container = styled.div`
 
     .menu-toggle {
         display: none;
-        position: absolute;
+        position: fixed;
         right: 1rem;
         top: 1rem;
         width: 50px;
         height: 50px;
         z-index: 4;
-        background-color: transparent;
+        background-color: #fff;
         border-radius: 100%;
 
         align-items: center;
@@ -71,7 +71,7 @@ export const Container = styled.div`
         flex: 1;
 
         @media (max-width: 768px) {
-            position: absolute;
+            position: fixed;
             height: 100vh;
             width: 250px;
             right: -250px;
@@ -116,7 +116,7 @@ export const Container = styled.div`
 
                     @media (max-width: 768px) {
                         width: 100%;
-                        height: 80px;
+                        height: 50px;
                         justify-content: flex-end;
                     }
 
@@ -128,6 +128,16 @@ export const Container = styled.div`
                         color: #e4a18c;
                     }
                 }
+            }
+        }
+
+        .redes-sociais {
+            display: none;
+
+            @media (max-width: 768px) {
+                display: flex;
+                justify-content: flex-end;
+                margin-top: 3rem;
             }
         }
     }
@@ -143,7 +153,7 @@ export const Container = styled.div`
         }
 
         @media (max-width: 768px) {
-            margin: 0.5rem 0.5rem 0;
+            display: none;
         }
     }
 

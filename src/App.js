@@ -1,18 +1,21 @@
-import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import React from 'react'
+import { BrowserRouter } from 'react-router-dom'
 import Routes from './routes'
 
-import GlobalStyle from './styles/global';
+import ModalContato from './components/ModalContato'
+
+import GlobalStyle from './styles/global'
 
 function App() {
-  return (
-    <>
-    <BrowserRouter>
-      <Routes />
-    </BrowserRouter>
-    <GlobalStyle />
-  </>
-  );
+    return (
+        <>
+            <BrowserRouter>
+                <Routes />
+                <ModalContato />
+            </BrowserRouter>
+            <GlobalStyle />
+        </>
+    )
 }
 
-export default App;
+export default App

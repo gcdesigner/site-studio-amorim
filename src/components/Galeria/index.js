@@ -13,8 +13,6 @@ const Galeria = () => {
         require.context('../../assets/galeria', false, /\.(png|jpe?g|svg)$/)
     )
 
-    console.log(images)
-
     return (
         <S.Container id="portfolio">
             <SectionTitle

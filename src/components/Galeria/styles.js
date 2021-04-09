@@ -17,7 +17,7 @@ export const Container = styled.section`
             flex-wrap: nowrap;
             overflow-x: auto;
             justify-content: flex-start;
-            margin: 0 -1.5rem;
+            margin: 0 -0.5rem;
         }
 
         img {
