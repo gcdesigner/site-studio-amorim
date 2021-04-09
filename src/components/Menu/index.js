@@ -89,7 +89,12 @@ const Menu = () => {
                 <nav className={toggleMenu ? 'opened' : 'closed'}>
                     <ul>
                         <li>
-                            <Router to="/">Home</Router>
+                            <Router
+                                to="/"
+                                onClick={() => handleToggleMenu(true)}
+                            >
+                                Home
+                            </Router>
                         </li>
                         {menuItems.map((item, index) => (
                             <li
@@ -110,7 +115,12 @@ const Menu = () => {
                                 {item.sub && item.sub.length && (
                                     <ul className="submenu">
                                         {item.sub.map((sub) => (
-                                            <Router to={sub.to}>
+                                            <Router
+                                                to={sub.to}
+                                                onClick={() =>
+                                                    handleToggleMenu(true)
+                                                }
+                                            >
                                                 {sub.title}
                                             </Router>
                                         ))}

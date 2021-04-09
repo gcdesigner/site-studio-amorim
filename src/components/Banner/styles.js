@@ -4,7 +4,7 @@ export const Container = styled.div`
     position: relative;
     width: 100%;
     min-height: calc(100vh - 150px);
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #968181;
@@ -21,8 +21,11 @@ export const Container = styled.div`
         background-color: rgba(0, 0, 0, 0.3);
         top: 0;
         left: 0;
-    }
 
+        @media (max-width: 768px) {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+    }
     .content {
         position: relative;
         width: 100%;
@@ -60,9 +63,10 @@ export const Container = styled.div`
 
                 @media (max-width: 768px) {
                     font-size: 3rem;
+                    word-break: break-all;
 
                     strong {
-                        font-size: 3.5rem;
+                        font-size: 2.5rem;
                     }
                 }
             }
@@ -71,6 +75,10 @@ export const Container = styled.div`
                 font-size: 2rem;
                 font-weight: 200;
                 opacity: 0.8;
+
+                @media (max-width: 768px) {
+                    font-size: 1.5rem;
+                }
             }
         }
     }

@@ -84,6 +84,7 @@ export const Container = styled.div`
             &.opened {
                 right: 0;
                 box-shadow: 0 0 20px #ccc;
+                overflow-y: auto;
             }
         }
 
@@ -173,6 +174,20 @@ export const Container = styled.div`
 
             a {
                 width: 100%;
+            }
+
+            @media (max-width: 768px) {
+                opacity: 1;
+                visibility: visible;
+                height: auto;
+                position: relative;
+                box-shadow: none;
+                padding: 0;
+
+                &::before,
+                &::after {
+                    display: none;
+                }
             }
         }
 

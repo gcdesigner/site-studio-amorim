@@ -1,13 +1,6 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    /* background-color: #fff;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    z-index: 9;
-    top: 0; */
-
     .loading-page {
         position: fixed;
         width: 100vw;

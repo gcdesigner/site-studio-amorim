@@ -5,7 +5,7 @@ import * as S from './styles'
 
 const WhatsappBallon = () => {
     return (
-        <S.Container>
+        <S.Container className="whatsapp-ballon">
             <a
                 href={process.env.REACT_APP_WHATSAPP_URL}
                 target="_blank"

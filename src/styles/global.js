@@ -15,6 +15,10 @@ export default createGlobalStyle`
 
         &.menu-opened, &.modal-opened {
             overflow: hidden;
+
+            .whatsapp-ballon {
+                display: none;
+            }
         }
 
         &.loading {
