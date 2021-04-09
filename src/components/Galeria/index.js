@@ -21,8 +21,12 @@ const Galeria = () => {
             />
 
             <div className="galeria">
-                {images.map((item) => (
-                    <img src={item.default} alt="Texto alternativo" />
+                {images.map((item, index) => (
+                    <img
+                        key={index}
+                        src={item.default}
+                        alt="Texto alternativo"
+                    />
                 ))}
             </div>
         </S.Container>

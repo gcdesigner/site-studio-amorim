@@ -96,7 +96,7 @@ const Menu = () => {
                                 Home
                             </Router>
                         </li>
-                        {menuItems.map((item, index) => (
+                        {menuItems.map((item) => (
                             <li
                                 key={item.title}
                                 className={item.sub ? 'hassub' : ''}
@@ -114,8 +114,9 @@ const Menu = () => {
                                 </LinkScroll>
                                 {item.sub && item.sub.length && (
                                     <ul className="submenu">
-                                        {item.sub.map((sub) => (
+                                        {item.sub.map((sub, index) => (
                                             <Router
+                                                key={index}
                                                 to={sub.to}
                                                 onClick={() =>
                                                     handleToggleMenu(true)
