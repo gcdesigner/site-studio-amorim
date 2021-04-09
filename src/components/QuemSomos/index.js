@@ -12,22 +12,6 @@ import * as S from './styles'
 
 const QuemSomos = () => {
     const images = [quemSomosimg1, quemSomosimg2, quemSomosimg3]
-    // const [galeria, setGaleria] = useState(0);
-    // const [cont, setCont] = useState(0);
-
-    // useEffect(() => {
-    //     const interval = setInterval(() => {
-    //         if(cont >= images.length - 1) {
-    //             setCont(0);
-    //         } else {
-    //             setCont(cont+1);
-    //         }
-    //         setGaleria(cont);
-    //     }, 5000);
-
-    //     return () => clearInterval(interval)
-
-    // }, [cont, images.length])
 
     return (
         <S.Container id="quemsomos">
@@ -36,14 +20,23 @@ const QuemSomos = () => {
                     <SectionTitle title="Quem Somos" desc="" />
 
                     <p>
-                        Quem conhece a experiência e formação profissional na
-                        execução de micropigmentação, sabe como pouquíssimas
-                        profissionais conseguiram demonstrar, realmente, um
-                        trabalho de qualidade no Brasil. Neste caso, as pessoas
-                        residentes em Brasília-DF, saíram na frente através da
-                        competência, dedicação e responsabilidade da Clínica
-                        Alessandra Ramalho Micropigmentação Estética e
-                        Paramédica.
+                        Somos um Studio de estética de alto padrão,
+                        especializado em Extensão de Cílios e Design de
+                        sobrancelhas.
+                    </p>
+
+                    <p>
+                        Estamos há mais de 8 anos no mercado da beleza
+                        oferecendo o que há de mais moderno e profissional. Com
+                        certificação internacional e centenas de horas trabalho
+                        estamos mais do que preparadas para lhe proporcionar uma
+                        experiência inesquecível e satisfatória.
+                    </p>
+
+                    <p>
+                        Não perca tenho. Venha conhecer nosso espaço que foi
+                        idealizado nos mínimos detalhes para fazer com que você
+                        sinta-se em casa.
                     </p>
 
                     <div>
@@ -83,9 +76,7 @@ const QuemSomos = () => {
                             className="each-fade"
                             key={index}
                             style={{ backgroundImage: `url(${item})` }}
-                        >
-                            {/* <img src={item} alt="texto alternativo" /> */}
-                        </div>
+                        ></div>
                     ))}
                 </Fade>
             </div>

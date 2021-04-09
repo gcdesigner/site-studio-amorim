@@ -25,9 +25,13 @@ export const Container = styled.section`
 
         .box-texto {
             position: relative;
-            max-width: 650px;
+            max-width: 750px;
             padding: 3rem 1rem;
             z-index: 2;
+
+            @media (max-width: 768px) {
+                text-align: center;
+            }
 
             p {
                 margin-bottom: 1rem;
