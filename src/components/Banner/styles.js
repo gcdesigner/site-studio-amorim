@@ -63,7 +63,6 @@ export const Container = styled.div`
 
                 @media (max-width: 768px) {
                     font-size: 3rem;
-                    word-break: break-all;
 
                     strong {
                         font-size: 2.5rem;

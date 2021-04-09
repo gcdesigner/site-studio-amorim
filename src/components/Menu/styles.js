@@ -227,13 +227,18 @@ export const Container = styled.div`
     }
 
     .agendar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         height: 35px;
         width: 170px;
         border-radius: 20px;
-        background-color: #feb39c;
-        color: #000;
+        background-color: #18c768;
+        color: #fff;
         margin-left: 1rem;
         font-size: 0.875rem;
+        font-weight: 600;
+        text-decoration: none;
 
         @media (max-width: 1024px) {
             display: none;

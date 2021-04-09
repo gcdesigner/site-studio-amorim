@@ -20,7 +20,7 @@ const CiliosPage = () => {
             <Menu />
             <Banner img={BannerCilios}>
                 <h2 style={{ textAlign: 'center' }}>
-                    Alongamento <br />
+                    Extensão <br />
                     de <strong>CÍLIOS</strong>
                 </h2>
                 <h3 style={{ textAlign: 'center' }}>

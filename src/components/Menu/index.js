@@ -166,9 +166,12 @@ const Menu = () => {
                     </a>
                 </div>
 
-                <button className="agendar" type="button">
-                    Agende seu horário
-                </button>
+                <a
+                    className="agendar"
+                    href={process.env.REACT_APP_WHATSAPP_URL}
+                >
+                    AGENDAR HORÁRIO
+                </a>
             </div>
         </S.Container>
     )

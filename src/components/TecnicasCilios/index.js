@@ -21,7 +21,7 @@ const TecnicasCilios = () => {
                         className={index % 2 === 0 ? 'left' : 'right'}
                     >
                         <div className="box-texto">
-                            <small>Alongamento de cílios</small>
+                            <small>Extensão de cílios</small>
                             <h4>{item.title}</h4>
                             <p>{item.desc}</p>
                         </div>

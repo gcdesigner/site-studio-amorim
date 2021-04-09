@@ -6,8 +6,6 @@ export const Container = styled.section`
     padding: 3rem 1rem;
 
     .galeria {
-        max-width: 1000px;
-        margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -21,7 +19,7 @@ export const Container = styled.section`
         }
 
         img {
-            max-width: 250px;
+            max-width: 300px;
             height: 100%;
             flex: 1 1 30%;
             padding: 0.5rem;

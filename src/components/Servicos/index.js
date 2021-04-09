@@ -18,7 +18,7 @@ const Servicos = () => {
 
             <S.Servico>
                 <div className="box-texto" style={{ marginRight: '1rem' }}>
-                    <h4>Alongamento de cílios</h4>
+                    <h4>Extensão de cílios</h4>
                     <p>Técnicas aplicadas</p>
                     <ul>
                         <li>Volume Russo</li>

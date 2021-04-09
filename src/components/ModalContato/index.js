@@ -38,7 +38,7 @@ const ModalContato = () => {
                     title="Fechar"
                     onClick={() => closeModal()}
                 >
-                    <FaTimes size={20} />
+                    <FaTimes size={30} />
                 </button>
                 <SectionTitle
                     title="Fale Conosco"

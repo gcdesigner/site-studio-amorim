@@ -24,7 +24,7 @@ const HomePage = () => {
                     <strong>PODEROSA</strong>
                 </h2>
                 <h3>
-                    Alongamento de cílios <br />& Design de sobrancelhas
+                    Extensão de cílios <br />& Design de sobrancelhas
                 </h3>
             </Banner>
             <Servicos />

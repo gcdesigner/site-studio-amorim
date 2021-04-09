@@ -13,7 +13,7 @@ export const Container = styled.div`
     justify-content: center;
     opacity: 1;
     visibility: visible;
-    transition: all 0.5s;
+    /* transition: all 0.5s; */
 
     &.modal-closed {
         opacity: 0;
@@ -51,13 +51,12 @@ export const Container = styled.div`
             @media (max-width: 768px) {
                 top: 4px;
                 right: 4px;
-                width: 40px;
-                height: 40px;
+                width: 45px;
+                height: 45px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background-color: #000;
-                color: #fff;
+                color: #333;
                 border-radius: 50% 10px 50% 50%;
             }
         }
