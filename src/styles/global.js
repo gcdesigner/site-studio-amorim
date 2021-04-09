@@ -1,12 +1,12 @@
 import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
-    @font-face {
+    /* @font-face {
         font-family: 'Cinzel';
         font-style: normal;
         font-weight: normal;
         src: local('Cinzel'), url('../fonts/Cinzel-VariableFont_wght.ttf') format('ttf');
-    }
+    } */
 
     * {
         margin: 0;
